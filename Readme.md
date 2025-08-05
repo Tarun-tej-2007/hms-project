@@ -1,35 +1,68 @@
-🏥 Super Awesome Hospital Management System 🏥
-"Where C++ meets healthcare, and nobody gets a segmentation fault!"
+📦 Project Overview
+Welcome to the Super Awesome Hospital Management System – a modern web app built with the powerful MERN stack! Designed to help hospitals and clinics manage doctors, patients, appointments, medications, billing, and more — all from one seamless dashboard.
 
-🚀 What's This All About?
-Welcome to the most exciting hospital management system you've ever seen! (Okay, maybe the bar for "exciting hospital software" isn't very high, but we tried our best!)
+Whether you're tired of handwritten prescriptions or want to prevent double-booked appointments, this system has your back.
 
-This C++ application helps healthcare facilities manage their day-to-day operations without pulling their hair out. It's like having a tiny digital army of administrative assistants who never need coffee breaks!
+🚀 Tech Stack (MERN)
+MongoDB – NoSQL database for storing structured healthcare data
 
-✨ Features That Will Make You Say "Wow!"
+Express.js – Backend framework for building RESTful APIs
+
+React.js – Frontend library for dynamic and responsive UI
+
+Node.js – JavaScript runtime for the backend server
+
+🧠 Features
 👨‍⚕️ Doctor Management
-Add, update, and track doctors faster than they can say "that's not covered by insurance"
-Search by specialization (yes, we know what a "pulmonologist" is!)
-Track doctor availability without playing phone tag
+Add, update, delete, and view doctors
+
+Search doctors by specialization
+
+Track availability
+
 🤒 Patient Management
-Store patient details more securely than they guard the hospital cafeteria's cookie recipe
-Find patients by disease or age range
-Track medication histories that are actually readable (unlike doctor handwriting)
+Securely manage patient records
+
+Search by disease, age range
+
+View medication history
+
 📅 Appointment Scheduling
-Book appointments with fancy time slots
-No more double-bookings (we promise!)
-Track appointment statuses - from "scheduled" to "completed" to "ran away screaming"
+Book, update, and cancel appointments
+
+Prevent double bookings
+
+View appointment statuses
+
 💊 Medication & Prescriptions
-Manage medications without the paper cuts
-Create and track prescriptions
-Everything is digital - no more deciphering if that's a "5mg" or "50mg"
+Manage medicines
+
+Create and manage prescriptions
+
 💰 Billing System
-Generate bills that make sense (a revolutionary concept in healthcare!)
-Track payment statuses
-Calculate revenue without needing an accounting degree
-👮 User Authentication
-Role-based access control (because not everyone should be able to diagnose patients from the accounting department)
-Secure login system (no, the password isn't "password123")
-📝 Logging & Reporting
-Comprehensive logging system that catches everything except your coffee spills
-Financial reporting that will make your accountant smile
+Generate invoices
+
+Track payments
+
+View revenue reports
+
+👮 User Authentication & Roles
+Secure login system with JWT
+
+Role-based access: Admin / Doctor / Receptionist
+
+📝 Logging & Reports
+Activity logs
+
+Financial reports
+
+
+
+🔐 Authentication Flow
+Users log in with email/password
+
+Backend returns a JWT token
+
+Token is stored in localStorage and sent in headers for protected routes
+
+Roles: admin, doctor, receptionist (used for access control)
